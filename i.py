@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 df = pd.read_csv(
-    '/Users/nnagelia/Downloads/Raymond Data Analysis/Airplane Strikes Dataset.csv')
+    'https://raw.githubusercontent.com/namanNagelia/airplaneDataAnalysis/main/Airplane%20Strikes%20Dataset.csv')
 pd.set_option('display.max_columns', None)
 year_counts = df.groupby("Incident Year").size(
 ).reset_index(name="Incident Count")
